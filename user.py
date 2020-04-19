@@ -15,6 +15,3 @@ class User:
         """
         self.user_list.append(self)
 
-
-if __name__ == "__main__":
-    main()
