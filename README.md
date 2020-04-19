@@ -2,7 +2,7 @@
 #### By Lucas Otieno Owino
 ## Description
 An application that will help us manage our passwords and even generate new passwords for us.
-## Installation
+### Installation
 * Clone this repository to your local computer.
 * Ensure you have python3.6 installed in your computer.
 * From the terminal navigate to the cloned project folder.
@@ -16,12 +16,17 @@ An application that will help us manage our passwords and even generate new pass
 2. Add new credentials.
 3. Remove credentials.
 4. Search credentials.
-5. Log Out.  
+5. Log Out. 
+### Running unit tests
+* Run python3.6 credentials_test.py for credential class tests.
+* Run python3.6 user_test.py for user class tests. 
 ## Requirements
 * Project should have two classes, a User class and Credentials class.
 * Application should have an authentication system that enables a user to log into their account and view their credentials. A user should be able to login to their account using the password that they created and NOT any password.
 * Project should make use of docstrings to document methods and functions.
 * Project must have a test class that test each individual method in your classes.
+## Bugs
+Since there is no database to support the app, once you exit or log out of a session you loose all the credentials and created user. You have to create a new user for every session. You can still use the default login but if you exit the app, you will still loose all the credentials you created.
 ## Technical Requirements
 * Project should contain a proper detailed README markdown file, with the full description of the project, setup instructions, dependencies, technologies used, authors, license information and contact information.
 * Project should have descriptive and properly outlined commits.
