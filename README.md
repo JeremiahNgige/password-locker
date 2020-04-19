@@ -1,0 +1,33 @@
+# Password Locker App
+#### By Lucas Otieno Owino
+## Description
+An application that will help us manage our passwords and even generate new passwords for us.
+## Requirements
+* Project should have two classes, a User class and Credentials class.
+* Application should have an authentication system that enables a user to log into their account and view their credentials. A user should be able to login to their account using the password that they created and NOT any password.
+* Project should make use of docstrings to document methods and functions.
+* Project must have a test class that test each individual method in your classes.
+## Technical Requirements
+* Project should contain a proper detailed README markdown file, with the full description of the project, setup instructions, dependencies, technologies used, authors, license information and contact information.
+* Project should have descriptive and properly outlined commits.
+* Project code should be pushed to Github with a description of the app provided in the Github Repository.
+## License
+Copyright (c) [2020] [Lucas Otieno]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
