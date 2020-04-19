@@ -29,3 +29,14 @@ def locate_credentials(account_name):
     """
     return Credentials.locate_by_name(account_name)
 
+
+def credentials_existance(name):
+    """
+    function that checks if a a particular account and its credentials exist based on searched account_name
+    """
+    return Credentials.credentials_exists(name)
+
+
+def display_credentials():
+    """
+    fu
