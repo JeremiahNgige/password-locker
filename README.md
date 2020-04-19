@@ -12,13 +12,11 @@ An application that will help us manage our passwords and even generate new pass
 * If you choose to login(lg), use: testuser as username and 12345 as PassWord
 * If you choose to create a new account, use cu as the code and follow the prompts.
 * Once logged in, you can:
-/**
-1: View Your saved credentials.
-2: Add new credentials.
-3: Remove credentials.
-4: Search credentials.
-5: Log Out.
-*/   
+1. View Your saved credentials.
+2. Add new credentials.
+3. Remove credentials.
+4. Search credentials.
+5. Log Out.  
 ## Requirements
 * Project should have two classes, a User class and Credentials class.
 * Application should have an authentication system that enables a user to log into their account and view their credentials. A user should be able to login to their account using the password that they created and NOT any password.
