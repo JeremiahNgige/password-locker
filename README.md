@@ -11,6 +11,8 @@ An application that will help us manage our passwords and even generate new pass
 * Project should contain a proper detailed README markdown file, with the full description of the project, setup instructions, dependencies, technologies used, authors, license information and contact information.
 * Project should have descriptive and properly outlined commits.
 * Project code should be pushed to Github with a description of the app provided in the Github Repository.
+## Technologies used
+* Python
 ## License
 Copyright (c) [2020] [Lucas Otieno]
 
