@@ -7,3 +7,7 @@ class Credentials:
         self.account_name = account_name
         self.account_username = account_username
         self.account_password = account_password
+
+
+if __name__ == "__main__":
+    main()
