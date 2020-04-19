@@ -21,3 +21,11 @@ def save_new_credentials(credentials):
     function to save the new credentials
     """
     credentials.save_credentials()
+
+
+def locate_credentials(account_name):
+    """
+    function to locate credentials based on account_name
+    """
+    return Credentials.locate_by_name(account_name)
+
