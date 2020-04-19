@@ -8,6 +8,14 @@ class Credentials:
         self.account_username = account_username
         self.account_password = account_password
 
+    credentials_list = []
+
+    def save_credentials(self):
+        """
+        method that saves credentials' object in credentials' list
+        """
+        self.credentials_list.append(self)
+
 
 if __name__ == "__main__":
     main()

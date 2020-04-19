@@ -20,6 +20,23 @@ class TestCredentials(unittest.TestCase):
             self.new_credentials.account_username, "AccountUserName")
         self.assertEqual(self.new_credentials.account_password, "Allow1234")
 
+    def test_save_credentials(self):
+        """
+        tests if credentials is saved in credentials' list
+        """
+        self.new_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 1)
+
+    def test_save_multiple_credentials(self):
+        """
+        tests if i can save multiple credentials in credentials' list
+        """
+        self.new_credentials.save_credentials()
+        test_credentials = Credentials(
+            "TestAccount", "TestAccountName", "TestAccountPassword")  # new cred
+        test_credentials.save_credentials()
+        self.assertEqual(len(Credentials.credentials_list), 2)
+
 
 if __name__ == "__main__":
     unittest.main()
