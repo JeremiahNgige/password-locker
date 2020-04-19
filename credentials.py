@@ -16,6 +16,12 @@ class Credentials:
         """
         self.credentials_list.append(self)
 
+    def delete_credentials(self):
+        """
+        method that deletes a credential
+        """
+        Credentials.credentials_list.remove(self)
+
 
 if __name__ == "__main__":
     main()
