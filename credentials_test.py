@@ -32,9 +32,9 @@ class TestCredentials(unittest.TestCase):
         tests if i can save multiple credentials in credentials' list
         """
         self.new_credentials.save_credentials()
-        test_credentials = Credentials(
-            "TestAccount", "TestAccountName", "TestAccountPassword")  # new cred
-        test_credentials.save_credentials()
+        new_test_credentials = Credentials(
+            "Twitter", "TestAccountName1", "TestAccountPassword1")  # new cred
+        new_test_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list), 2)
 
     def tearDown(self):
@@ -48,12 +48,26 @@ class TestCredentials(unittest.TestCase):
         this method checks if i can remove/delete a credential from the list
         """
         self.new_credentials.save_credentials()
-        test_credentials = Credentials(
-            "TestAccount", "TestAccountName", "TestAccountPassword")  # new cred
-        test_credentials.save_credentials()
+        new_test_credentials = Credentials(
+            "Twitter", "TestAccountName1", "TestAccountPassword1")  # new cred
+        new_test_credentials.save_credentials()
 
         self.new_credentials.delete_credentials()  # deletes the credential
         self.assertEqual(len(Credentials.credentials_list), 1)
+
+    def test_locate_credentials_by_name(self):
+        """
+        tests to check if we can locate a credential and display info
+        """
+        self.new_credentials.save_credentials()
+        new_test_credentials = Credentials(
+            "Twitter", "TestAccountName1", "TestAccountPassword1")  # new cred
+        new_test_credentials.save_credentials()
+
+        located_credentials = Credentials.locate_by_name("Twitter")
+
+        self.assertEqual(located_credentials.account_name,
+                         new_test_credentials.account_name)
 
 
 if __name__ == "__main__":

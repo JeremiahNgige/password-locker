@@ -22,6 +22,19 @@ class Credentials:
         """
         Credentials.credentials_list.remove(self)
 
+    @classmethod
+    def locate_by_name(cls, account_name):
+        """
+        method that takes in a name and returns a credential that matches the specific name
+        Args:
+            name: account_name that has a password
+        Returns:
+            The account_name and its corresponding password
+        """
+        for credential in cls.credentials_list:
+            if credential.account_name == account_name:
+                return credential
+
 
 if __name__ == "__main__":
     main()
