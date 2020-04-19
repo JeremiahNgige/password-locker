@@ -37,6 +37,9 @@ def credentials_existance(name):
     return Credentials.credentials_exists(name)
 
 
-def display_credentials():
+def delete_credentials(credentials):
     """
-    fu
+    function that deletes credentials
+    """
+    return Credentials.delete_credentials(credentials)
+
