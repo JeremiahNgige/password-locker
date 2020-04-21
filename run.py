@@ -195,7 +195,7 @@ def main():
                                     continue
 
                             else:
-                                print("That Contact Does not exist")
+                                print("That Credential Does not exist")
                                 break
 
                     elif option == '5':

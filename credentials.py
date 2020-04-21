@@ -56,3 +56,4 @@ class Credentials:
         """
         return cls.credentials_list
 
+    # pyperclip.copy(credentials_located.account_password)
